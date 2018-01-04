@@ -1,0 +1,44 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/index.js" type="module"></script>
+
+    <title>Arsenal Players API</title>
+</head>
+
+<body>
+    <div id = "createPlayer">
+            <input id="inputPlayerName" type="text" placeholder="player name">
+            <input id="inputPlayerAge" type="Number" placeholder="player age">
+            <input id="inputPlayerPosition" type="text" placeholder="player position">
+            <input type="button" onclick="createAndAppendPlayer()" value="Create">
+    </div>
+
+    <div id = "updatePlayer">
+            <input id="updatePlayerName" type="text" placeholder="player name">
+            <input id="updatePlayerAge" type="Number" placeholder="player age">
+            <input id="updatePlayerPosition" type="text" placeholder="player position">
+            <input type="button" onclick="updatePlayer()" value="Update">
+    </div>
+
+    <table id="playerTable">
+        <h2>Players</h2>
+        <thead>
+            <th>&nbsp;</th>
+            <th>Name</th>
+            <th>Age</th>
+            <th>position</th>
+        </thead>
+        <tbody id="playerDetails">
+
+        </tbody>
+    </table>
+
+</body>
+
+</html>
